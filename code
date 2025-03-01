@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, rgb(171, 86, 188), rgb(236, 237, 238));
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid rgb(236, 237, 238);
+            margin-bottom: 1rem;
+        }
+        .upload-btn {
+            margin-bottom: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .project-card {
+            background: rgb(9, 13, 17);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+        .contact-me {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgb(9, 13, 17);
+        }
+        a, button {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border: 2px solid #004e92;
+            border-radius: 8px;
+            background: rgb(236, 237, 238);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        a:hover, button:hover {
+            background: #004e92;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="c:\Users\vivan\Downloads\WhatsApp Image 2025-03-02 at 00.38.46_adc52b09.jpg" alt="Your Photo" class="profile-pic" id="profilePic">
+        <h1>Vivan Gupta</h1>
+        <p>Hi, I'm Vivan Gupta — a robotics enthusiast who's been crafting innovative projects and writing code since the 4th grade. Robotics isn't just my passion; it's my playground, where creativity meets technology. Dive into my portfolio and explore the world of ideas I've brought to life!</p>
+    </header>
+
+    <section class="container">
+        <h2>Innovations & Creations</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>RoboMind AI</h3>
+                <p>A project focused on building AI-powered robots that can think, learn, and adapt to their environments.</p>
+            </div>
+            <div class="project-card">
+                <h3>Autonomous Explorer</h3>
+                <p>An autonomous robot designed to navigate unknown terrain using advanced sensors and algorithms.</p>
+            </div>
+            <div class="project-card">
+                <h3>CodeCrafter Bot</h3>
+                <p>A bot that writes and optimizes code based on user inputs, streamlining the development process.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me">
+        <h2>Contact Me</h2>
+        <p>Email: yourname@gmail.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+
+    <script>
+        function loadPhoto(event) {
+            const profilePic = document.getElementById('profilePic');
+            profilePic.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
